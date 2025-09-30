@@ -1,7 +1,7 @@
 STEAM Akademi – Öğretmen Paneli ve İçerik Yönetimi
 https://steam-akademi.com/
 Modern bir öğretmen paneli, video içerik yönetimi ve ders planı paylaşım/değerlendirme özellikleri sunan PHP (PDO) + MySQL tabanlı bir web uygulaması.
-
+Bir proje kapsamında geliştirilmeye başlanmış olup geliştirme çalışmaları devam etmektedir.
 ## Özellikler
 - Öğretmen girişi ve oturum yönetimi
 - Öğretmen paneli (dashboard) istatistikleri (toplam video, izlenme, beğeni)
