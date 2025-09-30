@@ -22,8 +22,12 @@ Modern bir öğretmen paneli, video içerik yönetimi ve ders planı paylaşım/
     get-unites.php
     ders_plan_degerlendir.php
     ders_plan_degerlendirme_kontrol.php
+
+    
   config/
     db.php
+
+    
   assets/
     images/logo.png
 
