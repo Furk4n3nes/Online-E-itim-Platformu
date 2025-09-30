@@ -1,5 +1,5 @@
 STEAM Akademi – Öğretmen Paneli ve İçerik Yönetimi
-
+https://steam-akademi.com/
 Modern bir öğretmen paneli, video içerik yönetimi ve ders planı paylaşım/değerlendirme özellikleri sunan PHP (PDO) + MySQL tabanlı bir web uygulaması.
 
 ## Özellikler
@@ -13,8 +13,7 @@ Modern bir öğretmen paneli, video içerik yönetimi ve ders planı paylaşım/
 - Duyarlı arayüz (Bootstrap 5, Font Awesome)
 
 ## Dizim (Örnek)
-```
-new/
+
   ogretmen/
     dashboard.php
     ders_plan_sil.php
@@ -27,8 +26,6 @@ new/
     db.php
   assets/
     images/logo.png
-  ...
-```
 
 ## Gereksinimler
 - PHP 8.x (PDO etkin)
@@ -36,21 +33,21 @@ new/
 - Apache/Nginx (URL’ler doğrudan PHP dosyalarına yönlenebilir)
 
 ## Kurulum
-1. Depoyu indirin/klonlayın.
-2. Veritabanını oluşturun ve tabloları içe aktarın (ör: `Ogretmen`, `Video`, `Izlenme`, `Begenme`, `DersPlan`, `Ders`, `Sinif`, `Unite`).
-3. Veritabanı bağlantısını yapılandırın: `new/config/db.php` içinde sunucu, veritabanı adı, kullanıcı, parola bilgilerini güncelleyin.
-4. Sunucunuzu projenin kök klasörüne yönlendirin (ör. `new/`).
-5. Tarayıcıdan giriş sayfasına gidin ve bir öğretmen hesabı ile giriş yapın.
+1. Veritabanını oluşturun ve tabloları içe aktarın (ör: `Ogretmen`, `Video`, `Izlenme`, `Begenme`, `DersPlan`, `Ders`, `Sinif`, `Unite`).
+2. Veritabanı bağlantısını yapılandırın: `new/config/db.php` içinde sunucu, veritabanı adı, kullanıcı, parola bilgilerini güncelleyin.
+3. Sunucunuzu projenin kök klasörüne yönlendirin (ör. `new/`).
+4. Tarayıcıdan giriş sayfasına gidin ve bir öğretmen hesabı ile giriş yapın.
+5. Yayın haklarından dolayı web sitesinin kodlarını paylaşamıyorum.
 
 ## Önemli Dosyalar
-- `new/ogretmen/dashboard.php`: Öğretmen paneli, istatistikler ve ders planı listeleri
-- `new/ogretmen/ders_plan_sil.php`: Plan sahibinin planını silmesi için JSON endpoint (POST)
-- `new/ogretmen/ders_plan_ekle.php`: Yeni ders planı ekleme (POST)
-- `new/ogretmen/update_plan.php`: Ders planını güncelleme (POST)
-- `new/ogretmen/get-unites.php`: Seçilen derse göre ünite listesini döndürür (GET, JSON)
-- `new/ogretmen/ders_plan_degerlendir.php`: 1-5 arası puan verme (POST)
-- `new/ogretmen/ders_plan_degerlendirme_kontrol.php`: Mevcut puanı sorgulama (GET, JSON)
-- `new/config/db.php`: PDO ile veritabanı bağlantısı
+- `/ogretmen/dashboard.php`: Öğretmen paneli, istatistikler ve ders planı listeleri
+- `/ogretmen/ders_plan_sil.php`: Plan sahibinin planını silmesi için JSON endpoint 
+- `/ogretmen/ders_plan_ekle.php`: Yeni ders planı ekleme (POST)
+- `/ogretmen/update_plan.php`: Ders planını güncelleme (POST)
+- `/ogretmen/get-unites.php`: Seçilen derse göre ünite listesini döndürür (GET, JSON)
+- `/ogretmen/ders_plan_degerlendir.php`: 1-5 arası puan verme (POST)
+- `/ogretmen/ders_plan_degerlendirme_kontrol.php`: Mevcut puanı sorgulama (GET, JSON)
+- `/config/db.php`: PDO ile veritabanı bağlantısı
 
 ## Güvenlik Notları
 - Tüm kritik sayfalarda oturum ve kullanıcı tipi kontrolü yapılır.
@@ -63,18 +60,5 @@ new/
   - Diğer öğretmenlerin planlarını inceleyin ve puanlayın.
   - Yeni plan eklerken Drive paylaşım bağlantısını eklemeyi unutmayın.
 
-## Ekran Görüntüleri
-- Logo ve görseller `assets/images/` altındadır. İsteğe bağlı olarak GitHub’a ekran görüntüleri ekleyebilirsiniz.
-
-## Yol Haritası (Öneri)
-- Yönetici panelinde plan onay akışının geliştirilmesi
-- Gelişmiş arama/filtreleme
-- Detaylı bildirim sistemi
-
-## Lisans
-Bir lisans seçin ve buraya ekleyin (ör. MIT).
-
-—
-Katkılar ve geri bildirimler için pull request veya issue açabilirsiniz.
 
 
